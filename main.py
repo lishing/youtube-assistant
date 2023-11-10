@@ -1,7 +1,6 @@
 import code as cd
 import streamlit as st
 import textwrap
-from dotenv import load_dotenv
 
 st.title("YouTube Assistant")
 
