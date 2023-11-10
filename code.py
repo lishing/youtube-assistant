@@ -20,7 +20,7 @@ load_dotenv()
 openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 # Get the OpenAI API key from streamlit secrets
-openai_api_key = st.secrets["OPENAI_API_KEY"]
+#openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 """
 Get video_id from video_url using regex
