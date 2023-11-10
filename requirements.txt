@@ -1,6 +1,7 @@
 code
 textwrap
 python-dotenv
+dotenv
 re
 youtube_transcript_api
 nltk

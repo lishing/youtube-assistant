@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+from python-dotenv import load_dotenv
 import re
 from youtube_transcript_api import YouTubeTranscriptApi
 import numpy as np
