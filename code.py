@@ -1,5 +1,5 @@
-import os
-from dotenv import load_dotenv
+#import os
+#from dotenv import load_dotenv
 import re
 from youtube_transcript_api import YouTubeTranscriptApi
 import numpy as np
@@ -14,13 +14,13 @@ import openai
 import streamlit as st
 
 # load .env variables
-load_dotenv()
+#load_dotenv()
 
 # Get the OpenAI API key from .env
-openai_api_key = os.environ.get("OPENAI_API_KEY")
+#openai_api_key = os.environ.get("OPENAI_API_KEY")
 
 # Get the OpenAI API key from streamlit secrets
-#openai_api_key = st.secrets["OPENAI_API_KEY"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 """
 Get video_id from video_url using regex
