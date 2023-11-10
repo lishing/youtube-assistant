@@ -1,11 +1,8 @@
 code
-streamlit
 textwrap
-dotenv
+python-dotenv
 re
 youtube_transcript_api
-numpy
-pandas
 nltk
 sentence_transformers
 faiss
