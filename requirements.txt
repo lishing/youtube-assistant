@@ -1,0 +1,13 @@
+code
+streamlit
+textwrap
+dotenv
+re
+youtube_transcript_api
+numpy
+pandas
+nltk
+sentence_transformers
+faiss
+nltk.tokenize
+openai
