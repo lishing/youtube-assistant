@@ -1,6 +1,9 @@
 import code as cd
 import streamlit as st
 import textwrap
+from pathlib import Path
+
+path = Path(__file__).parent.resolve()
 
 st.title("YouTube Assistant")
 
