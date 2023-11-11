@@ -1,11 +1,7 @@
-code
-textwrap
-python-dotenv
-dotenv
-re
-youtube_transcript_api
-nltk
-sentence_transformers
+streamlit==1.27.1
+dotenv==1.0.0
+youtube_transcript_api==0.6.1
+nltk==3.8.1
+sentence_transformers==4.34.0
 faiss
-nltk.tokenize
-openai
+openai==0.28.1
