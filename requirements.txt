@@ -1,8 +1,6 @@
 streamlit==1.27.1
-dotenv==1.0.0
 youtube_transcript_api==0.6.1
 nltk==3.8.1
-sentence_transformers==4.34.0
-faiss
+sentence_transformers
+faiss-cpu
 openai==0.28.1
-code
