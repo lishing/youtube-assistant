@@ -5,3 +5,4 @@ nltk==3.8.1
 sentence_transformers==4.34.0
 faiss
 openai==0.28.1
+code
