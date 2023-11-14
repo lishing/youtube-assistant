@@ -1,5 +1,5 @@
-# import os
-# from dotenv import load_dotenv
+import os
+#from dotenv import load_dotenv
 import re
 from youtube_transcript_api import YouTubeTranscriptApi
 import numpy as np
@@ -14,7 +14,7 @@ import openai
 import streamlit as st
 
 # load .env variables
-# load_dotenv()
+#load_dotenv()
 
 # Get the OpenAI API key from .env
 #openai_api_key = os.environ.get("OPENAI_API_KEY")
@@ -34,7 +34,7 @@ def get_video_id(video_url):
         return None
 
 """
-Generate response with gpt3.5 ChatCompletion
+Generate response with gpt4 ChatCompletion
 """
 def generate_response_with_gpt(context):
     openai.api_key = openai_api_key
@@ -62,7 +62,7 @@ This could be useful for this app, which needs semantic search for Q&A
 
 def create_embeddings(video_url):
     video_id = get_video_id(video_url)
-    transcript = YouTubeTranscriptApi.get_transcript(video_id)
+    transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['cn', 'en'])
     text_values = [text['text'] for text in transcript]
 
     embeddings = []

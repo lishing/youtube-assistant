@@ -17,12 +17,14 @@ with st.form(key="my_form"):
         key="query",
         height=10
     )
+
     submit_button = st.form_submit_button(label='Submit')
 
 if query and youtube_url:
     index, text_values = cd.create_embeddings(youtube_url)
     context = cd.perform_query_search(index, text_values, query, k=4)
     response = cd.generate_response_with_gpt(context)
+
     st.subheader('Answers')
     st.text_area(
         'Context from video',
